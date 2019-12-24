@@ -1,0 +1,36 @@
+/* components/xinfabu/xinfabu.wxss */
+
+.wrapper {
+    width : 655rpx;
+    margin: 0 auto;
+}
+
+.fabu-out {
+    padding-top    : 30rpx;
+    display        : flex;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+    padding-bottom: 80rpx;
+}
+
+.fabu {
+    margin-bottom: 30rpx;
+}
+
+.fabu-pic {
+    width : 190rpx;
+    height: 300rpx;
+}
+
+.bookname {
+    margin-top: 30rpx;
+    color     : #fff;
+    font-size : 30rpx;
+}
+
+.writername {
+    color     : #5d637c;
+    font-size : 24rpx;
+    margin-top: 14rpx;
+}
+

@@ -1,0 +1,146 @@
+/**index.wxss**/
+page {
+    background-color:#21272e;
+}
+.content {
+    margin-top: 40rpx;
+}
+.wrapper {
+    width: 655rpx;
+    margin: 0 auto;
+}
+.search {
+    width: 650rpx;
+    height: 100rpx;
+    background-color: #2d353d;
+    border-radius: 40rpx;
+    text-indent: 86rpx;
+}
+.sort {
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: pink; */
+}
+.sort-1 {
+    font-size: 40rpx;
+    color: #fff;
+    align-self: center;
+}
+.sort-2 {
+    font-size: 30rpx;
+    color: #a2a8ba;
+    align-self: center;
+    
+}
+.scroll {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.scroll-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.si-fir {
+    width: 160rpx;
+    height: 165rpx;
+    border-radius: 20rpx;
+    margin-right: 30rpx;
+}
+.si-sec {
+    color: #fff;
+}
+.hotsearch {
+    padding: 70rpx 0rpx 40rpx;
+    border-top: 2rpx solid #292e36;
+    border-bottom: 2rpx solid #292e36;
+}
+
+.hs-first {
+    font-size: 40rpx;
+    color    : #fff;
+    margin-bottom: 20rpx;
+}
+
+.hs-second {
+    display       : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrap {
+    width: 596rpx;
+    margin-left: 48rpx;
+}
+.hs-second1 {
+    border : 1px solid #fff;
+    padding: 15rpx 20rpx;
+    border-radius: 20rpx;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.hotbuy {
+    margin-top: 107rpx;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+   
+  
+}
+.hb {
+    display: flex;
+    flex-direction: row;
+    background-color: #2b323b;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    padding: 25rpx 20rpx 30rpx 30rpx;
+    margin-right: 20rpx;
+}
+.hb-left {
+    position: relative;
+    top: -40rpx;
+    width: 170rpx;
+    height: 250rpx;
+}
+.hb-right {
+    padding-left: 30rpx;
+    overflow: hidden;
+}
+.hbr-top {
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid #363d47;
+}
+.hbrt {
+    width: 355rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+}
+.hbr-title {
+    font-size: 40rpx;
+    color: #fff;
+}
+.dian {
+    font-size: 30rpx;
+}
+.hbr-writer {
+    padding-top: 14rpx;
+    font-size: 24rpx;
+    color: #fff;
+}
+.hb-bottom {
+    width: 355rpx;
+    color: #777e99;
+    font-size: 24rpx;
+    padding-top: 18rpx;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}

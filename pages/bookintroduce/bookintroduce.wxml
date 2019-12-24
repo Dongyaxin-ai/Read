@@ -1,0 +1,21 @@
+<!--pages/bookintroduce/bookintroduce.wxml-->
+<!-- <view></view> -->
+<view class="bookintroduce wrapper">
+    <view class="bookposter" wx:for="{{introducearr}}" wx:key="index">
+        <image class="intro-pic" src="{{item.touxiang}}"></image>
+        <view class="intro-cont">
+            <view class="book-title">{{item.bookname}}</view>
+            <view class="book-writer">作者：{{item.writername}}</view>
+            <view class="book-about">{{item.about}}</view>
+            <view class="book-star">星星</view>
+        </view>
+    </view>
+
+
+
+
+
+
+
+
+</view>

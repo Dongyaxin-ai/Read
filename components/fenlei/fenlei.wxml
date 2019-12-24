@@ -1,0 +1,10 @@
+<!--component/fenlei/fenlei.wxml-->
+<scroll-view class="scroll wrapper" scroll-x="true">
+  <view class="scroll-item" wx:for="{{arr}}" wx:key="index">
+    <image class="si-fir" src="{{item.touxiang}}">
+    </image>
+    <view wx:if="true" class="si-sec">{{item.type}}</view>
+    <view wx:if="true" class="si-sec">{{item.name}}</view>
+  </view>
+</scroll-view>
+

@@ -1,0 +1,7 @@
+<!--pages/scidetail2/scidetail2.wxml-->
+<view class="scidetail2">
+    <view class="scide2" data-num="{{index}}" wx:for="{{arrdetail2}}" bindtap="godetail" wx:key="index">
+        <image class="scide2-pic" src="{{item.touxiang}}"></image>
+        <view class="scide2-title">{{item.bookname}}</view>
+    </view>
+</view>

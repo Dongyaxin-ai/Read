@@ -1,0 +1,28 @@
+/* component/fenlei/fenlei.wxss */
+.wrapper {
+	/* width: 655rpx;
+	margin: 0 auto; */
+	margin-left: 50rpx;
+}
+.scroll {
+    display: flex;
+		white-space: nowrap; 
+    margin-top: 50px;
+  	
+}
+.scroll-item {
+    /* display: flex;
+    flex-direction: column; */
+		display: inline-block;
+		color: #fff;
+}
+.si-fir {
+    width: 160rpx;
+    height: 165rpx;
+    border-radius: 20rpx;
+    margin-right: 30rpx;
+}
+.si-sec {
+    color: #fff;
+		margin-top: 5rpx;
+}

@@ -1,0 +1,25 @@
+/* pages/scidetail2/scidetail2.wxss */
+page {
+    background-color: #21272e;
+}
+.scidetail2 {
+    width: 570rpx;
+    margin: 137rpx auto 0rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.scide2 {
+    margin-bottom: 76rpx;
+}
+.scide2-pic {
+    width: 274rpx;
+    height: 405rpx;
+    margin-bottom: 23rpx;
+}
+.scide2-title {
+    font-size: 32rpx;
+    color: #fff;
+    text-align: center;
+}

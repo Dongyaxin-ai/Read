@@ -1,0 +1,8 @@
+<!--components/xinfabu/xinfabu.wxml-->
+<view class="wrapper fabu-out">
+    <view class="fabu" wx:for="{{newarr}}" wx:key="index">
+        <image class="fabu-pic" src="{{item.touxiang}}"></image>
+        <view class="bookname">{{item.bookname}}</view>
+        <view class="writername">{{item.writername}}</view>
+    </view>
+</view>

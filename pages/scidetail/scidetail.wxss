@@ -1,0 +1,38 @@
+/* pages/scidetail/scidetail.wxss */
+page {
+    background-color: #21272e;
+}
+.scidetail {
+    margin-top: 70rpx;
+		text-align: center;
+}
+.sciencepic {
+    width: 400rpx;
+    height: 580rpx;
+}
+.sci-title {
+    color: #fff;
+    text-align: center;
+    font-size: 40rpx;
+    margin-top: 56rpx;
+    margin: 56rpx 0rpx 33rpx 0rpx;
+}
+.sci-writer {
+    color: #656a7b;
+    font-size: 36rpx;
+    text-align: center;
+    padding-bottom: 74rpx;
+}
+.detail-mess {
+    padding-top: 50rpx;
+    border-top: 1rpx solid #656a7b;
+}
+.mess-touxiang {
+    margin-bottom: 35rpx;
+    text-align: center;
+}
+.mess-number {
+    text-align: center;
+    color: #656a7b;
+    font-size: 28rpx;
+}

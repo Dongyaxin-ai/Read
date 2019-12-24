@@ -1,0 +1,16 @@
+<!--pages/science/science.wxml-->
+<view class="hotbuy wrap">
+    <view wx:for="{{arrscience}}" class="hb" wx:key="index">
+        <image class="hb-left" src="{{item.touxiang}}"></image>
+        <view class="hb-right">
+            <view class="hbr-top">
+                <view class="hbrt">
+                    <text class="hbr-title">{{item.bookname}}</text>
+                    <text class="dian">...</text>
+                </view>
+                <text class="hbr-writer">作者:{{item.writername}}</text>
+            </view>
+            <text class="hb-bottom">{{item.about}}</text>
+        </view>
+    </view>
+</view>

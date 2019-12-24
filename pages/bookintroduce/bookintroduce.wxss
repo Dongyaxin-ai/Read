@@ -1,0 +1,33 @@
+/* pages/bookintroduce/bookintroduce.wxss */
+page {
+    background-color: #21272e;
+}
+.wrapper {
+    width: 655rpx;
+    margin: 0 auto;
+}
+.bookintroduce {
+    margin-top: 60rpx;
+}
+.bookposter {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60rpx;
+}
+.intro-pic {
+    width: 216rpx;
+    height: 329rpx;
+    margin-right: 30rpx;
+}
+.intro-cont {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.book-about {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

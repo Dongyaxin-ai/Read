@@ -1,0 +1,11 @@
+<!--pages/scidetail/scidetail.wxml-->
+<view class="scidetail" hover-class="none" hover-stop-propagation="false">
+  <image class="sciencepic" src="{{current.touxiang}}"></image>
+  <view class="sci-title">{{current.bookname}}</view>
+  <view class="sci-writer">{{current.writername}}</view>
+
+  <view class="detail-mess">
+    <view class="mess-touxiang">我们是一群头像</view>
+    <view class="mess-number">457人已阅读</view>
+  </view>
+</view>

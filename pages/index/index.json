@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "fenlei": "/components/fenlei/fenlei",
+    "xinfabu": "/components/xinfabu/xinfabu"
+	}
+}

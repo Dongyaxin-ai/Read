@@ -1,0 +1,48 @@
+{
+	"pages": [
+					"pages/search/search",
+		"pages/bookintroduce/bookintroduce",
+
+		"pages/index/index",
+		"pages/scidetail2/scidetail2",
+		"pages/scidetail/scidetail",
+		"pages/science/science",
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#21272e",
+		"navigationBarTitleText": "WeChat",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"backgroundColor": "#2a313a",
+		"borderStyle": "white",
+		"selectedColor": "#00b38b",
+		"color": "#666666",
+		"list": [
+			{
+				"iconPath": "/images/tabbar/1.png",
+				"selectedIconPath": "images/tabbar/1active.png",
+				"pagePath": "pages/index/index"
+			},
+			{
+				"iconPath": "/images/tabbar/2.png",
+				"selectedIconPath": "images/tabbar/2active.png",
+				"pagePath": "pages/scidetail2/scidetail2"
+			},
+			{
+				"iconPath": "/images/tabbar/3.png",
+				"selectedIconPath": "images/tabbar/3active.png",
+				"pagePath": "pages/search/search"
+			},
+			{
+				"iconPath": "/images/tabbar/4.png",
+				"selectedIconPath": "images/tabbar/4active.png",
+				"pagePath": "pages/index/index"
+			}
+		]
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}
