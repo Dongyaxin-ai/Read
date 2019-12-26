@@ -7,7 +7,8 @@ Page({
 	 */
 	data: {
 		searcharr: [],
-		seararr: []
+		inputval: '',
+		seararr: ["nihao1"]
 	},
 
 	/**
@@ -21,27 +22,53 @@ Page({
 			})
 			console.log(app.globalData.bookarr)
 		})
-
-	},
-	// searchsubmit: function () {
-	// 	console.log(123)
-	// }.then(function getsearch(e) {
-	// 	var a = e.detail.value;
-	// 	this.setData({
-	// 		seararr: a
-	// 	})
-	// }),
-	getsearch: function(e) {
-		var a = e.detail.value;
-		console.log(a);
+		this.openHistorySearch()
 		
-		if(a !== "") {
-			this.setData({
-				seararr: a
+	},
+	openHistorySearch: function () {
+		this.setData({
+			//同步
+			seararr:wx.getStorageSync('seararr') || [],
+		})
+	},
+	historydel: function() {
+		wx.clearStorageSync('seararr')
+		this.setData({
+			seararr:[]
+		})
+	},
+	getsearch: function (e) {
+		var inputval = e.detail.value;
+		var seararr = this.data.seararr;
+		if (inputval == "") {
+			//输入为空的时候的处理
+			wx.showToast({
+				title:"搜索内为空",
+				icon:"none"
 			})
 		}
-		e.detail.value = ""
-		
+		else {
+			if (seararr.length < 5) {
+				seararr.unshift({
+					value: inputval,
+					id: seararr.length
+				})
+			}
+			else {
+				seararr.pop()
+				seararr.unshift(
+					{
+						value: inputval,
+						id: seararr.length
+					}
+				)
+			}
+			wx.setStorageSync('seararr', seararr)
+
+		}
+		console.log(seararr);
+
+
 	},
 	/**
 	 * 生命周期函数--监听页面初次渲染完成

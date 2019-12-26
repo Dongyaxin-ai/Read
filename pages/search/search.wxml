@@ -1,7 +1,7 @@
 <!--pages/search/search.wxml-->
 <view class="search wrapper">
     <view class="search-bar">
-            <input class="search-bar1" type="text" value="" placeholder="搜索..." bindblur="getsearch" />
+            <input class="search-bar1" type="text" value="" placeholder="搜索..." bindinput="getsearch" />
         
         <text class="search-bar2">取消</text>
     </view>
@@ -16,12 +16,10 @@
 
     <view class="sort sortte" hover-class="none" hover-stop-propagation="false">
         <view class="sort-1">搜索历史</view>
-        <view class="sort-2">删除</view>
+        <view class="sort-2" bindtap="historydel">删除</view>
     </view>
 
     <view class="history">
-        <view wx:for="{{seararr}}" wx:key="index" class="searchhis">{{item}}</view>
-        <!-- <view class="searchhis">自有人像雕塑</view>
-        <view class="searchhis">人文环境</view> -->
+        <view wx:for="{{seararr}}" wx:key="index" class="searchhis">{{item.value}}</view>
     </view>
 </view>

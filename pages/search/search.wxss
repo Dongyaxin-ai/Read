@@ -62,6 +62,7 @@ page {
     margin-top: 30rpx;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .searchhis {
     background-color: #262a31;

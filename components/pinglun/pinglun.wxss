@@ -1,0 +1,52 @@
+/* components/pinglun/pinglun.wxss */
+.comm-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.desc {
+    width: 556rpx;
+}
+.headpic {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.desc-title {
+    padding-bottom: 34rpx;
+    font-size: 28rpx;
+    color: #fff;
+}
+.desc-detail {
+    color: #868dab;
+    font-size: 28rpx;
+    padding-bottom: 34rpx;
+}
+.commb-bo {
+    color: #868dab;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.commb-bo1 {
+    font-size: 20rpx;
+    color: #868dab;
+}
+.zfen {
+    width: 180rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fen {
+    display: flex;
+    flex-direction: row;
+}
+.fenpic {
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 12rpx;
+}
+.fennum {
+    font-size: 25rpx;
+}

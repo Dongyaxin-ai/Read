@@ -7,15 +7,92 @@
             <view class="book-title">{{item.bookname}}</view>
             <view class="book-writer">作者：{{item.writername}}</view>
             <view class="book-about">{{item.about}}</view>
-            <view class="book-star">星星</view>
+            <view class="book-star">
+                <image wx:for="{{xing}}" wx:key="index" class="starpic" src="../../images/icon/Star.png"></image>
+                <view class="pingfen">{{xing}}.0</view>
+            </view>
         </view>
     </view>
 
+    <view class="operation">
+        <view class="operation-item" wx:for="{{operpicarr}}" wx:key="index" data-num="{{index}}" bindtap="shoucang">
+            <image class="oper-pic" src="{{item}}"></image>
+            <view class="oper-collection">{{opercollarr[index]}}</view>
+        </view>
+        <image class="small" wx:if="{{isshow}}" src="../../images/icon/xiaoxin.png"></image>
+    </view>
+
+    <view class="bookdetails">
+        <view class="bd-title">详情</view>
+        <view class="bd-detail">
+            与三体文明的战争使人类第一-次看到了 宇宙黑暗的真相，地球文明像一个恐惧的孩子，熄灭了寻友的篝火
+            在暗夜中发抖。自以为历经沧桑，其实刚刚蹒跚学步;自以为悟出了生存竞争的秘密，其实还远没有竞争的资格
+        </view>
+    </view>
+
+    <view class="sort" hover-class="none" hover-stop-propagation="false">
+        <view class="sort-1">查看目录</view>
+        <view class="sort-2">></view>
+    </view>
+
+    <view class="comm">
+        <view class="comm-top">
+            <view class="zcomm">
+                <view class="comment">评论</view>
+                <view class="commentnum">215条评论</view>
+            </view>
+            <image class="shuxie" src="../../images/icon/shuxie.png"></image>
+        </view>
+        <view class="comm-bottom">
+            <image class="headpic" src="../../images/icon/head.png"></image>
+            <view class="desc">
+                <view class="desc-title">배수지</view>
+                <view class="desc-detail">
+                    대유 씨가 만든 여성들은 모두 뚜렷한 성모 특질을 가지고 있지만 본질적으로 약화되었다.잎은 문혁의 독양으로, 장은 정제 독점물, 일정이 가장 고전적이다.
+                    성모와 바보 같은 미소 곡선에 서다.대유 씨가 만든 남성들은 모두 뚜렷한 결함을 띠고 있지만 본질적으로 극단적인 인간화다.건달한 인물의 대사, 최고상사가 가장 잘 살게 한다.
+                    나집의 황당하고 굴레가 그를 구세주로 만들었다. 그러나 그는 반드시 선종할 수 없다는 것을 결정했다. 연약하고 나약한 고집이 센 운천명도 강개와 운기 때문에 사랑받을 이유가
+                    없다.그러나 나는 이런 사람을 진심으로 이해한다, 이런 성격, 이런 운명.
+                </view>
+                <view class="commb-bo">
+                    <view class="commb-bo1">12-04 21:20</view>
+                    <view class="zfen">
+                        <view class="fen">
+                            <image class="fenpic" src="../../images/icon/xiaoxin.png"></image>
+                            <view class="fennum">134</view>
+                        </view>
+                        <view class="fen">
+                            <image class="fenpic" src="../../images/icon/message.png"></image>
+                            <view class="fennum">89</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
 
 
+    </view>
 
+   
+</view>
+<view class="bot">
+   <view class=" bott wrapper">
+    <view class="bot1">试看</view>
+    <view class="bot2">购买</view>
+   </view>
+</view>
 
+<view class="dispsuccess" wx:if="{{disp}}">
+    <view class="disout" wx:for="{{shelf}}" wx::key="index">
+        <image class="shujia" src="{{item.touxiang}}"></image>
+        <view class="success">已经将这本书加入到个人书架</view>
+         <view class="yes" bindtap="yincang">好的</view>
+    </view>
+</view>
 
-
-
+<!-- 分享 -->
+<view class="sharebottom" wx:if="{{fenxian}}">
+    <view class="share-z">
+        <image class="share-pic" wx:for="{{sharestyle}}" wx:key="index" src="{{item}}"></image>
+    </view>
+    <image class="cancel" src="../../images/icon/x.png" bindtap="cancel"></image>
 </view>

@@ -1,8 +1,8 @@
 {
 	"pages": [
-					"pages/search/search",
+		"pages/discuss/discuss",
 		"pages/bookintroduce/bookintroduce",
-
+		"pages/search/search",
 		"pages/index/index",
 		"pages/scidetail2/scidetail2",
 		"pages/scidetail/scidetail",

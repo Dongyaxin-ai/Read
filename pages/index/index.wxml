@@ -33,21 +33,24 @@
     <view class="sort-2" bindtap="gototal">查看全部 ></view>
   </view>
 
-  <view class="hotbuy wrap">
-    <view wx:for="{{arrfabu}}" class="hb" wx:key="index">
-      <image class="hb-left" src="{{item.touxiang}}"></image>
-      <view class="hb-right">
-        <view class="hbr-top">
-          <view class="hbrt">
-            <text class="hbr-title">{{item.bookname}}</text>
-            <text class="dian">...</text>
+  <scroll-view class="hotbuy wrap" scroll-x="true">
+    <view class="scroll-cont">
+      <view wx:for="{{arrfabu}}" class="hb" wx:key="index">
+        <image class="hb-left" src="{{item.touxiang}}"></image>
+        <view class="hb-right">
+          <view class="hbr-top">
+            <view class="hbrt">
+              <text class="hbr-title">{{item.bookname}}</text>
+              <text class="dian">...</text>
+            </view>
+            <text class="hbr-writer">作者:{{item.writername}}</text>
           </view>
-          <text class="hbr-writer">作者:{{item.writername}}</text>
+          <text class="hb-bottom">{{item.about}}</text>
         </view>
-        <text class="hb-bottom">{{item.about}}</text>
       </view>
     </view>
-  </view>
+   
+  </scroll-view>
 
 
 
